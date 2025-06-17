@@ -1,32 +1,33 @@
 {
-  "name": "gcm-vibed",
-  "version": "1.0.0",
-  "module": "index.ts",
-  "type": "module",
-  "main": "dist/cli.js",
-  "bin": {
-    "gcm-vibed": "./dist/cli.js"
-  },
-  "scripts": {
-    "build": "vite build",
-    "build:clean": "rm -rf dist && vite build",
-    "preview": "bun run build:clean && node dist/cli.js"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@vitejs/plugin-react": "^4.5.2",
-    "vite": "^6.3.5"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "overrides": {
-    "react": "^19.1.0"
-  },
-  "dependencies": {
-    "@types/react": "^19.1.8",
-    "ink": "^6.0.0",
-    "ink-big-text": "^2.0.0",
-    "react": "^19.1.0"
-  }
+    "name": "gcm-vibed",
+    "version": "1.0.0",
+    "module": "index.ts",
+    "type": "module",
+    "main": "dist/cli.js",
+    "bin": {
+        "gcm-vibed": "./dist/cli.js"
+    },
+    "scripts": {
+        "build": "vite build",
+        "build:clean": "rm -rf dist && vite build",
+        "preview": "bun run build:clean && node dist/cli.js"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.0.0",
+        "@types/bun": "latest",
+        "@vitejs/plugin-react": "^4.5.2",
+        "vite": "^6.3.5"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "overrides": {
+        "react": "^19.1.0"
+    },
+    "dependencies": {
+        "@types/react": "^19.1.8",
+        "ink": "^6.0.0",
+        "ink-big-text": "^2.0.0",
+        "react": "^19.1.0"
+    }
 }
