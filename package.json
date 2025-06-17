@@ -10,7 +10,9 @@
     "scripts": {
         "build": "vite build",
         "build:clean": "rm -rf dist && vite build",
-        "preview": "bun run build:clean && node dist/cli.js"
+        "preview": "bun run build:clean && node dist/cli.js",
+        "format": "biome format . --write",
+        "lint": "biome check ."
     },
     "devDependencies": {
         "@biomejs/biome": "2.0.0",
